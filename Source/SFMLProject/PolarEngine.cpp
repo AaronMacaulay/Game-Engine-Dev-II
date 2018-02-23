@@ -3,12 +3,12 @@
 #include <Windows.h>
 #include <tchar.h>
 #include <iostream>
-#include <SplashScreen.h>
+#include "SplashScreen.h"
 
 PolarEngine::GameState PolarEngine::_gameState;
 GameObjectManager PolarEngine::_gameObjectManager;
 bool PolarEngine::Uninitialized = false;
-sf::RenderWindow PolarEngine::_renderWindow;
+sf::RenderWindow PolarEngine::_mainWindow;
 
 // Free disk space required in MB
 const int REQUIRED_DISK_SPACE = 150;
@@ -72,7 +72,7 @@ void PolarEngine::GameLoop()
 	_gameObjectManager.Update(0);
 
 	//late update all systems
-	_gameObject < anager.LateUpdate(0);
+	_gameObject < _gameObjectManager.LateUpdate(0);
 }
 
 void PolarEngine::LevelLoaded()
@@ -82,6 +82,36 @@ void PolarEngine::LevelLoaded()
 
 	_gameObjectManager.Start();
 	// start other systems
+}
+
+void SplashScreen::Show(sf::RenderWindow & renderWindow)
+{
+	sf::Texture splashLogo;
+
+	if (!splashLogo.loadFromFile("polarstar.jpg"))
+	{
+		return;
+	}
+
+	sf::Sprite sprite(splashLogo);
+	sprite.setTexture(splashLogo);
+	sprite.setTextureRect(sf::IntRect(50, 50, 50, 50)); // change size of splash image
+	sprite.setPosition(100, 100); // change pos of splash image
+
+	renderWindow.draw(sprite);
+	renderWindow.display();
+
+	sf::Event event;
+	while (PolarEngine::_gameState != PolarEngine::Initialize)
+	{
+		while (renderWindow.pollEvent(event))
+		{
+			if (event.type == sf::Event::EventType::KeyPressed || event.type == sf::Event::EventType::MouseButtonPressed || event.type == sf::Event::EventType::Closed)
+			{
+				return;
+			}
+		}
+	}
 }
 
 void PolarEngine::Start(void)
