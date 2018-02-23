@@ -122,6 +122,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Actors\Player.cpp" />
+<<<<<<< HEAD
+=======
+    <ClCompile Include="Components\BaseComponent.cpp" />
+    <ClCompile Include="Components\TransformComponent.cpp" />
+>>>>>>> master
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -129,9 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Actors\Player.hpp" />
+<<<<<<< HEAD
+=======
+    <ClInclude Include="Components\BaseComponent.hpp" />
+    <ClInclude Include="Components\TransformComponent.hpp" />
+>>>>>>> master
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameObjectManager.h" />
     <ClInclude Include="PolarEngine.h" />
+    <ClInclude Include="SplashScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
