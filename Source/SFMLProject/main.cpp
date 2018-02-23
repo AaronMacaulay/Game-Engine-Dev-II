@@ -1,10 +1,10 @@
 #include "PolarEngine.h"
-#include "tchar.h"
+#include "stdlib.h"
+#include <iostream>
 
-int main(int argc, _TCHAR* argv[])
+
+int main(int argc, char** argv)
 {
 	PolarEngine::Initialize();
 	PolarEngine::Start();
-
-	return 0;
 }
