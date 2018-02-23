@@ -8,7 +8,7 @@
 PolarEngine::GameState PolarEngine::_gameState;
 GameObjectManager PolarEngine::_gameObjectManager;
 bool PolarEngine::Uninitialized = false;
-sf::RenderWindow PolarEngine::_mainWindow;
+
 
 // Free disk space required in MB
 const int REQUIRED_DISK_SPACE = 150;
@@ -18,7 +18,7 @@ const long REQUIRED_MEMORY = 2;
 const long REQUIRED_CLOCK_SPEED = 2.5;
 
 void PolarEngine::Initialize() {
-	//Splash goes here
+	
 
 	//Check sys requirements
 
@@ -63,7 +63,7 @@ void PolarEngine::Initialize() {
 		std::cout << "CPU speed is too slow.";
 		return;
 	}
-	isInitialized = true;
+	Uninitialized = true;
 }
 
 void PolarEngine::GameLoop()
@@ -116,7 +116,7 @@ void SplashScreen::Show(sf::RenderWindow & renderWindow)
 
 void PolarEngine::Start(void)
 {
-	if (!isInitialized)
+	if (!Uninitialized)
 		return;
 
 	std::cout << "Initialized";
@@ -126,24 +126,7 @@ void PolarEngine::Start(void)
 	//Audio initialization
 	//Physics initialization
 
-	//Create Splash Screen
-	PushStateToStack(std::make_unique<SplashScreen>());
-
-	while (_renderWindow.isOpen())
-	{
-		sf::Event event;
-		while (_renderWindow.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				_renderWindow.close();
-		}
-		_renderWindow.clear();
-		if (!StateStack.empty())
-		{
-			StateStack.top()->Render();
-		}
-		_renderWindow.display();
-	}
+	
 
 	_gameState = PolarEngine::Playing;
 
