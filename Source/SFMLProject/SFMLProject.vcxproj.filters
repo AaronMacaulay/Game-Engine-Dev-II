@@ -33,11 +33,14 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Components\BaseComponent.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
     <ClCompile Include="Components\TransformComponent.cpp">
       <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseComponent.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +59,20 @@
     <ClInclude Include="SplashScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\BaseComponent.hpp">
-      <Filter>Source Files\Components</Filter>
-    </ClInclude>
     <ClInclude Include="Components\TransformComponent.hpp">
       <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\targetver.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -14,8 +14,9 @@ public:
 	static void Start();
 	static void Initialize();
 	static void LevelLoaded();
-
+	
 private:
+	static bool isInitialized;
 	static bool IsExiting();
 	static void GameLoop();
 
@@ -25,5 +26,6 @@ public :static GameState _gameState;
 	static GameObjectManager _gameObjectManager;
 	static GameObject _gameObject;
 	static sf::RenderWindow _mainWindow;
+
 };
 

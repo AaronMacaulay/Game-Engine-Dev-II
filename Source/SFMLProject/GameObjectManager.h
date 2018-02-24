@@ -20,7 +20,7 @@ public:
 	void LateUpdate(float msec);
 
 private:
-	std::map<int, GameObject*> m_Objects;
+	std::map<int, GameObject*>m_Objects;
 	static int nextObjectID;
 };
-#endif /* GameObjectManager_hpp */
+#endif 

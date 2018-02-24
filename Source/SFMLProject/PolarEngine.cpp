@@ -1,4 +1,5 @@
 #include "PolarEngine.h"
+#include "stdafx.h"
 #include <direct.h>
 #include <Windows.h>
 #include <tchar.h>
@@ -7,8 +8,8 @@
 
 PolarEngine::GameState PolarEngine::_gameState;
 GameObjectManager PolarEngine::_gameObjectManager;
-bool PolarEngine::Uninitialized = false;
-sf::RenderWindow PolarEngine::_mainWindow;
+bool PolarEngine::isInitialized=false;
+
 
 // Free disk space required in MB
 const int REQUIRED_DISK_SPACE = 150;
@@ -18,7 +19,7 @@ const long REQUIRED_MEMORY = 2;
 const long REQUIRED_CLOCK_SPEED = 2.5;
 
 void PolarEngine::Initialize() {
-	//Splash goes here
+	
 
 	//Check sys requirements
 
@@ -52,7 +53,7 @@ void PolarEngine::Initialize() {
 	DWORD type = REG_DWORD;
 	HKEY hKey;
 	//Open the key where the processor speed is hidden
-	long lError = RegOpenKeyEx(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0", 0.KEY_READ, &hKey);
+	long lError = RegOpenKeyEx(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0", 0,KEY_READ, &hKey);
 	if (lError == ERROR_SUCCESS)
 	{
 		RegQueryValueEx(hKey, "~Mhz", NULL, &type, (LPBYTE)&dwMHz, &BufSize);
@@ -68,11 +69,25 @@ void PolarEngine::Initialize() {
 
 void PolarEngine::GameLoop()
 {
-	//update all systems
-	_gameObjectManager.Update(0);
+	sf::Event currentEvent;
+	while (_mainWindow.pollEvent(currentEvent))
+	{
 
-	//late update all systems
-	_gameObject < _gameObjectManager.LateUpdate(0);
+		switch (_gameState)
+		{
+		case PolarEngine::Playing:
+		{
+			_mainWindow.clear(sf::Color(255, 0, 0));
+			_mainWindow.display();
+
+			if (currentEvent.type == sf::Event::Closed)
+			{
+				_gameState = PolarEngine::Exiting;
+			}
+			break;
+		}
+		}
+	}
 }
 
 void PolarEngine::LevelLoaded()
@@ -102,7 +117,7 @@ void SplashScreen::Show(sf::RenderWindow & renderWindow)
 	renderWindow.display();
 
 	sf::Event event;
-	while (PolarEngine::_gameState != PolarEngine::Initialize)
+	while (true)
 	{
 		while (renderWindow.pollEvent(event))
 		{
@@ -116,54 +131,20 @@ void SplashScreen::Show(sf::RenderWindow & renderWindow)
 
 void PolarEngine::Start(void)
 {
-	if (!isInitialized)
+	if (_gameState != Uninitialized)
 		return;
 
-	std::cout << "Initialized";
-
-	//Graphics initialization
-	_renderWindow.create(sf::VideoMode(800, 600), "Lions Arc");
-	//Audio initialization
-	//Physics initialization
-
-	//Create Splash Screen
-	PushStateToStack(std::make_unique<SplashScreen>());
-
-	while (_renderWindow.isOpen())
-	{
-		sf::Event event;
-		while (_renderWindow.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				_renderWindow.close();
-		}
-		_renderWindow.clear();
-		if (!StateStack.empty())
-		{
-			StateStack.top()->Render();
-		}
-		_renderWindow.display();
-	}
-
+	_mainWindow.create(sf::VideoMode(1024, 768, 32), "Pang!");
 	_gameState = PolarEngine::Playing;
 
 	while (!IsExiting())
 	{
-		GameLoop;
+		GameLoop();
 	}
 
-	//_mainWindow.Close();
+	_mainWindow.close();
 }
 
-void PolarEngine::PushStateToStack(State::Ptr state)
-{
-	StateStack.push(state);
-}
-
-void PolarEngine::PopStateStack()
-{
-	StateStack.pop();
-}
 
 bool PolarEngine::IsExiting()
 {

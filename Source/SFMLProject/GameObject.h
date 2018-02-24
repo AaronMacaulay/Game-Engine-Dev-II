@@ -2,15 +2,14 @@
 #define GameObject_h
 
 #include <stdio.h>
-#include "BaseMessage.hpp"
-#include "BaseComponent.hpp"
-#include "Transform.hpp"
+#include "BaseMessage.h"
+#include "BaseComponent.h"
+#include "Components\TransformComponent.hpp"
 #include <iostream>
 #include <list>
 #include <vector>
 #include <iterator>
-#include <glm.hpp>
-#include <matrix_transform.hpp>
+#include "SFML\Graphics\Transform.hpp"
 
 class GameObject {
 public:
@@ -35,7 +34,7 @@ private: // Methods
 	bool PassMessageToComponents(BaseMessage* msg);
 
 public: // Members
-	Transform transform;    //local transform
+	Transform Local_transform;  //local transform
 
 private: // Members
 	int m_UniqueID;
@@ -43,7 +42,7 @@ private: // Members
 	GameObject* m_Parent;
 	std::vector<GameObject*> m_Children;
 
-	glm::mat4 worldTransform;
+	sf::Transform worldTransform;
 	std::vector<BaseComponent*> m_Components;
 };
 #endif /* GameObject_hpp */
