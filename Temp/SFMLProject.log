@@ -1,14 +1,8 @@
 ﻿E:\VisualStudio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 E:\VisualStudio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   PolarEngine.cpp
-e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(18): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(29): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(105): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'PolarEngine::GameState' (or there is no acceptable conversion)
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\shared\guiddef.h(197): note: could be 'bool operator !=(const GUID &,const GUID &)'
-  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(105): note: while trying to match the argument list '(PolarEngine::GameState, overloaded-function)'
-e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(135): warning C4551: function call missing argument list
-  Main.cpp
-  GameObjectManager.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(30): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
   GameObject.cpp
 e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(15): error C2143: syntax error: missing ';' before '*'
 e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
@@ -21,4 +15,8 @@ e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfm
   TransformComponent.cpp
 e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobject.h(37): error C3646: 'Local_transform': unknown override specifier
 e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobject.h(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Generating Code...
+  Compiling...
+  Main.cpp
+  GameObjectManager.cpp
   Generating Code...
