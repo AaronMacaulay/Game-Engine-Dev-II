@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "BaseMessage.hpp"
 #include "BaseComponent.hpp"
-#include "Transform.hpp"
+#include "TransformComponent.hpp"
 #include <iostream>
 #include <list>
 #include <vector>
