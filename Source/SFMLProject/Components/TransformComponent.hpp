@@ -5,36 +5,37 @@
 
 #include <stdio.h>
 #include "..\GameObjectManager.h"
-#include "BaseComponent.hpp"
-#include <SFML\Main.hpp>
+#include "..\BaseComponent.h"
 #include "SFML\Graphics\Transform.hpp"
-#include "SFML\OpenGL.hpp"
 
-#define X_AXIS sf::vector3(1,0,0)
-#define Y_AXIS sf::vector3(0,1,0)
-#define Z_AXIS sf::vector3(0,0,1)
 
-struct Vector3
+#define X_AXIS sf::Vector2 (1,0)
+#define Y_AXIS sf::Vector2 (0,1)
+
+
+struct Vector2
 {
-public:
-	Vector3() : x(0.0f), y(0.0f), z(0.0f) {}
-	Vector3(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}
 
-	float x, y, z;
+	Vector2() : x(0.0f), y(0.0f){}
+	Vector2(float _x, float _y) : x(_x), y(_y){}
+
+	float x, y;
 };
 
 class Transform : public BaseComponent {
 public:
-	Transform() : m_Position(), m_Rotation(), m_Scale(1, 1, 1) {}
+	Transform() : m_Position(), m_Rotation(), m_Scale(1, 1) {}
 	void Awake();
 	void Start();
 	void Update();
 	void LateUpdate();
 	bool SendMessage(BaseMessage* msg) { return false; }
-	Vector3 m_Position;
-	Vector3 m_Rotation;
-	Vector3 m_Scale;
+	Vector2 m_Position;
+	float m_Rotation;
+	Vector2 m_Scale;
+
+	sf::Transform transform;
 
 };
 
-#endif /* Transform_hpp */
+#endif 

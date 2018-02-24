@@ -121,8 +121,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseComponent.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseMessage.cpp" />
     <ClCompile Include="..\Actors\Player.cpp" />
-    <ClCompile Include="BaseComponent.cpp" />
     <ClCompile Include="Components\TransformComponent.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameObjectManager.cpp" />
@@ -130,8 +131,11 @@
     <ClCompile Include="PolarEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseComponent.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\BaseMessage.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Aaron%27s Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\Source\SFMLProject\targetver.h" />
     <ClInclude Include="..\..\Actors\Player.hpp" />
-    <ClInclude Include="BaseComponent.hpp" />
     <ClInclude Include="Components\TransformComponent.hpp" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameObjectManager.h" />

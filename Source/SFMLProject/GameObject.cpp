@@ -20,10 +20,10 @@ void GameObject::Start() {
 
 void GameObject::Update(float msec) {
 	if (m_Parent) { //This node has a parent...
-		worldTransform = m_Parent->worldTransform * transform.transformMatrix;
+		worldTransform = m_Parent->worldTransform * Local_transform.transform;
 	}
 	else { //Root node, world transform is local transform!
-		worldTransform = glm::mat4(1.0f) * transform.transformMatrix;
+		worldTransform = Local_transform.transform;
 	}
 
 	for (std::vector<BaseComponent*>::iterator i = m_Components.begin(); i != m_Components.end(); ++i) {

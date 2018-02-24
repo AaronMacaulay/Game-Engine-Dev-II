@@ -1,8 +1,24 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-Main.obj : error LNK2019: unresolved external symbol "public: static void __cdecl PolarEngine::Initialize(void)" (?Initialize@PolarEngine@@SAXXZ) referenced in function _main
-PolarEngine.obj : error LNK2019: unresolved external symbol "private: static bool __cdecl PolarEngine::IsExiting(void)" (?IsExiting@PolarEngine@@CA_NXZ) referenced in function "public: static void __cdecl PolarEngine::Start(void)" (?Start@PolarEngine@@SAXXZ)
-PolarEngine.obj : error LNK2019: unresolved external symbol "private: static void __cdecl PolarEngine::GameLoop(void)" (?GameLoop@PolarEngine@@CAXXZ) referenced in function "public: static void __cdecl PolarEngine::Start(void)" (?Start@PolarEngine@@SAXXZ)
-PolarEngine.obj : error LNK2001: unresolved external symbol "private: static enum PolarEngine::GameState PolarEngine::_gameState" (?_gameState@PolarEngine@@0W4GameState@1@A)
-PolarEngine.obj : error LNK2001: unresolved external symbol "private: static class sf::RenderWindow PolarEngine::_mainWindow" (?_mainWindow@PolarEngine@@0VRenderWindow@sf@@A)
-..\..\Debug-Game-Win32\Debug-Game-Win32\SFMLProject.exe : fatal error LNK1120: 5 unresolved externals
+﻿E:\VisualStudio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+E:\VisualStudio\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  PolarEngine.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(18): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(29): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(105): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'PolarEngine::GameState' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\shared\guiddef.h(197): note: could be 'bool operator !=(const GUID &,const GUID &)'
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(105): note: while trying to match the argument list '(PolarEngine::GameState, overloaded-function)'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\polarengine.cpp(135): warning C4551: function call missing argument list
+  Main.cpp
+  GameObjectManager.cpp
+  GameObject.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(15): error C2143: syntax error: missing ';' before '*'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(15): error C2238: unexpected token(s) preceding ';'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(23): error C2065: 'GameObject': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(23): error C2059: syntax error: '>'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobjectmanager.h(23): error C2976: 'std::map': too few template arguments
+  e:\visualstudio\vc\tools\msvc\14.11.25503\include\map(73): note: see declaration of 'std::map'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobject.cpp(86): warning C4065: switch statement contains 'default' but no 'case' labels
+  TransformComponent.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobject.h(37): error C3646: 'Local_transform': unknown override specifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\sfmlproject\gameobject.h(37): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Generating Code...
