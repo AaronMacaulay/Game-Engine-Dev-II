@@ -4,6 +4,7 @@
 #include <Windows.h>
 #include <tchar.h>
 #include <iostream>
+#include <SFML/Audio.hpp>
 #include "SplashScreen.h"
 
 PolarEngine::GameState PolarEngine::_gameState;
@@ -115,6 +116,13 @@ void SplashScreen::Show(sf::RenderWindow & renderWindow)
 
 	renderWindow.draw(sprite);
 	renderWindow.display();
+
+	sf::SoundBuffer buffer;
+	if (!buffer.loadFromFile("SplashScreenSound.wav"))
+		return;
+	sf::Sound sound;
+	sound.setBuffer(buffer);
+	sound.play();
 
 	sf::Event event;
 	while (true)

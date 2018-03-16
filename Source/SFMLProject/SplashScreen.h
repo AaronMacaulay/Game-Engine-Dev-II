@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "GameObjectManager.h"
+#include <SFML/Audio.hpp>
 
 class SplashScreen
 {
