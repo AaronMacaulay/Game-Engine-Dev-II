@@ -1,0 +1,165 @@
+﻿  PhysicsRigidbody.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(16): error C3646: 'rigidBodyA': unknown override specifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(17): error C3646: 'rigidBodyB': unknown override specifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(23): error C2061: syntax error: identifier 'PhysicsRigidbody'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(24): error C2061: syntax error: identifier 'PhysicsRigidbody'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(26): error C2065: 'PhysicsRigidbody': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(26): error C2923: 'std::list': 'PhysicsRigidbody' is not a valid template type argument for parameter '_Ty'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(26): error C3203: 'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(16): error C2660: 'PhysicsEngine::IsGrounded': function does not take 1 arguments
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(22): error C2065: 'Bounds': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(22): error C2146: syntax error: missing ';' before identifier 'bound'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(22): error C2065: 'bound': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(22): error C2061: syntax error: identifier 'Bounds'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(23): error C2065: 'Renderer': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(25): error C2065: 'renderer': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(27): error C2065: 'bound': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(27): error C2065: 'renderer': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(27): error C2228: left of '.bounds' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(27): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): error C2065: 'bound': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): error C2228: left of '.center' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): error C2228: left of '.x' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): error C2228: left of '.extents' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(30): error C2228: left of '.y' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): error C2065: 'bound': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): error C2228: left of '.center' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): error C2228: left of '.x' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): error C2228: left of '.extents' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(31): error C2228: left of '.y' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(37): error C2275: 'PhysicsEngine': illegal use of this type as an expression
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.h(12): note: see declaration of 'PhysicsEngine'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsrigidbody.cpp(39): error C2660: 'PhysicsEngine::AddRigidBody': function does not take 1 arguments
+  PhysicsEngine.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(1): error C2143: syntax error: missing ';' before 'string'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(4): error C2653: 'PhysicsEngine': is not a class or namespace name
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(5): error C2143: syntax error: missing ';' before '{'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(5): error C2447: '{': missing function header (old-style formal list?)
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(9): error C2653: 'PhysicsEngine': is not a class or namespace name
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2146: syntax error: missing 'in' before identifier 'rb'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2065: 'rb': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2146: syntax error: missing ')' before identifier 'in'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2059: syntax error: ')'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2065: 'in': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2146: syntax error: missing ';' before identifier 'rigidBodies'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(11): error C2065: 'rigidBodies': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(12): error C2065: 'rb': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(12): error C2228: left of '.Integrate' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(12): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(12): error C2059: syntax error: ';'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(14): error C2059: syntax error: '}'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(14): error C2143: syntax error: missing ';' before '}'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(16): error C2653: 'PhysicsEngine': is not a class or namespace name
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(17): error C2143: syntax error: missing ';' before '{'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(17): error C2447: '{': missing function header (old-style formal list?)
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(31): error C2653: 'PhysicsEngine': is not a class or namespace name
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2146: syntax error: missing 'in' before identifier 'bodyA'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2065: 'bodyA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2146: syntax error: missing ')' before identifier 'in'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2059: syntax error: ')'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2065: 'in': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2146: syntax error: missing ';' before identifier 'rigidBodies'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2065: 'rigidBodies': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2228: left of '.GetRange' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): error C2228: left of '.size' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(33): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(34): error C2059: syntax error: 'for each'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(34): error C2143: syntax error: missing ';' before '{'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(35): error C2065: 'bodyA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(35): error C2065: 'bodyB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(36): error C2065: 'CollisionPair': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(36): error C2146: syntax error: missing ';' before identifier 'pair'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(36): error C2065: 'pair': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(37): error C2065: 'CollisionInfo': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(37): error C2146: syntax error: missing ';' before identifier 'colInfo'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(37): error C2065: 'colInfo': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): error C2065: 'pair': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): error C2228: left of '.rigidBodyA' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): error C2065: 'bodyA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): error C2228: left of '.rigidBodyB' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(38): error C2065: 'bodyB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2065: 'Vector2': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2146: syntax error: missing ';' before identifier 'distance'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2065: 'distance': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2065: 'bodyB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2228: left of '.t_position' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(40): error C2065: 'bodyA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2065: 'Vector2': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2146: syntax error: missing ';' before identifier 'halfSizeA'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2065: 'halfSizeA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2065: 'bodyA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2228: left of '.aabb' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2228: left of '.tRight' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(42): error C2228: left of '.bLeft' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2065: 'Vector2': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2146: syntax error: missing ';' before identifier 'halfSizeB'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2065: 'halfSizeB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2065: 'bodyB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2228: left of '.aabb' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2228: left of '.tRight' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(43): error C2228: left of '.bLeft' must have class/struct/union
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2065: 'Vector2': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2146: syntax error: missing ';' before identifier 'gap'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2065: 'gap': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2039: 'abs': is not a member of 'std'
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\predefined c++ types (compiler internal)(209): note: see declaration of 'std'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2065: 'distance': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2228: left of '.x' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C3861: 'abs': identifier not found
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2228: left of '.y' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C3861: 'Vector2': identifier not found
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2065: 'halfSizeA': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(45): error C2065: 'halfSizeB': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(48): error C2065: 'gap': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(48): error C2228: left of '.x' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(48): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(48): error C2228: left of '.y' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(48): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(49): error C2065: 'collisions': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(49): error C2228: left of '.ContainsKey' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(49): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(49): error C2065: 'pair': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(50): error C2065: 'collisions': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(50): error C2228: left of '.Remove' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(50): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(50): error C2065: 'pair': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(53): error C2065: 'gap': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(53): error C2228: left of '.x' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(53): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(53): error C2228: left of '.y' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(53): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(54): error C2065: 'distance': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(54): error C2228: left of '.x' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(54): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(56): error C2065: 'colInfo': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(56): error C2228: left of '.collisionNormal' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(56): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(56): error C3861: 'Vector2': identifier not found
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(60): error C2065: 'colInfo': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(60): error C2228: left of '.collisionNormal' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(60): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(60): error C3861: 'Vector2': identifier not found
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): error C2065: 'colInfo': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): error C2228: left of '.penetration' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): error C2065: 'gap': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): error C2228: left of '.x' must have class/struct/union
+  e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(62): note: type is 'unknown-type'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(65): error C2065: 'distance': undeclared identifier
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\source\polar engine\physicsengine.cpp(65): fatal error C1003: error count exceeds 100; stopping compilation
+  Generating Code...
