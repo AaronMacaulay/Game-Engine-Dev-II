@@ -1,2 +1,17 @@
-﻿  PolarStarEngine.cpp
-  PolarStarEngine.vcxproj -> D:\College Files\GameEngine\PolarStarEngine\..\Game\PolarStarEngine.exe
+﻿  Vector.cpp
+  Transform.cpp
+  SpriteRenderer.cpp
+  Rigidbody.cpp
+  PolarStarEngine.cpp
+  PhysicsEngine.cpp
+  main.cpp
+  InputHandler.cpp
+  GameObjectManager.cpp
+  GameObject.cpp
+  BoxCollider.cpp
+  Bill.cpp
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\polarstarengine\polarstarengine\bill.cpp(75): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\aaron's stuff\documents\t163 work\gameenginedev\game-engine-dev-ii\polarstarengine\polarstarengine\bill.cpp(79): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+  PolarStarEngine.vcxproj -> E:\Aaron's Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\PolarStarEngine\..\Game\PolarStarEngine.exe
+  PolarStarEngine.vcxproj -> E:\Aaron's Stuff\Documents\T163 Work\GameEngineDev\Game-Engine-Dev-II\PolarStarEngine\..\Game\PolarStarEngine.pdb (Partial PDB)
