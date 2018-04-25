@@ -3,9 +3,13 @@
 #include <iostream>
 #include "PolarStarEngine.h"
 
+#include<vector>
+
 int main()
 {
 	PolarStarEngine application;
+
+	//application.display_splash_screen();
 	application.main_loop();
 
 	system("pause");

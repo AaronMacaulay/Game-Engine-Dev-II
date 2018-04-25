@@ -1,27 +1,29 @@
 #include <iostream>
 
 #include "Bill.h"
+#include "Bullet.h"
 #include "SpriteRenderer.h"
+
 
 Bill::Bill() : GameObject("Bill", nullptr), move_speed(1) {
 
 	SpriteRenderer* sprite_renderer = new SpriteRenderer();
-	sprite_renderer->set_sprite("..\\Assets\\Billcipher.png");
+	sprite_renderer->set_sprite("..\\Assets\\redspaceship.png");
 	this->add_component(sprite_renderer);
 
-	BoxCollider* box_collider = new BoxCollider(sprite_renderer->get_sprite().getGlobalBounds().width * 0.5f,
-		sprite_renderer->get_sprite().getGlobalBounds().height * 0.5f);
-	this->add_component(box_collider);
+//	BoxCollider* box_collider = new BoxCollider(sprite_renderer->get_sprite().getGlobalBounds().width * 0.5f,
+//		sprite_renderer->get_sprite().getGlobalBounds().height * 0.5f);
+//	this->add_component(box_collider);
 
-	rigidbody = new Rigidbody();
-	rigidbody->mass = 1.0f;
+//	rigidbody = new Rigidbody();
+	//rigidbody->mass = 1.0f;
 	//rigidbody->gravity.x = -0.0001f;
 	//rigidbody->gravity.y = 0.0f;
-	rigidbody->bounciness = 0.5f;
-	this->add_component(rigidbody);
+//	rigidbody->bounciness = 0.5f;
+//	this->add_component(rigidbody);
 
 	//this->transform->setScale(sf::Vector2f(0.25f, 0.25f));
-	this->transform->setPosition(375.0f, 600.0f);
+	this->transform->setPosition(1024/2 - 50.f, 709 - 50.f * 2 - 10.f);
 
 	/*
 	InputHandler* input_handler = new InputHandler();
@@ -33,6 +35,7 @@ Bill::Bill() : GameObject("Bill", nullptr), move_speed(1) {
 void Bill::update(float delta_time) {
 	GameObject::update(delta_time);
 
+	int shootTimer = 0;
 	sf::Vector2f temp_position = this->transform->getPosition();
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
@@ -66,9 +69,13 @@ void Bill::update(float delta_time) {
 		this->transform->scale(sf::Vector2f(1.005f, 1.005f));
 	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-		this->rigidbody->stop(false, true);
-		this->rigidbody->add_force(jump_force);
+	if (shootTimer < 5)
+		shootTimer++;
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && shootTimer >= 5)
+	{
+		Bullet* bullet = new Bullet();
+		shootTimer = 0;
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {

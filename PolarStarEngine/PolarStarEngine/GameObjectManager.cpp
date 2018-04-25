@@ -3,6 +3,10 @@
 
 GameObjectManager* GameObjectManager::instance;
 
+AudioComponent GameObjectManager::audioManager = AudioComponent();
+
+Splash GameObjectManager::splashScreen = Splash();
+
 GameObjectManager::GameObjectManager() {
 	GameObjectManager::instance = this;
 }
@@ -20,7 +24,8 @@ void GameObjectManager::start() {
 }
 
 void GameObjectManager::update(float delta_time) {
-	for (std::vector<GameObject*>::iterator itorator = this->scene_graph.begin(); itorator != this->scene_graph.end(); itorator++) {
-		(*itorator)->update(delta_time);
+	for (std::vector<GameObject*>::iterator iterator = this->scene_graph.begin(); iterator != this->scene_graph.end(); iterator++) {
+		(*iterator)->update(delta_time);
+
 	}
 }

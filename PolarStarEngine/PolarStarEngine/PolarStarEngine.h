@@ -52,6 +52,8 @@ private:
 	//init 
 	void init_graphics();
 	void init_audio();
-
+	
 	void setup_scene();
+
+	static GameObjectManager objectManager;
 };
